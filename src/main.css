@@ -1,0 +1,129 @@
+/* тоже самое что и в main.less */
+.title {
+  font: var(--font-h2);
+  color: var(--text-01);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+  margin-top: 48px;
+}
+
+
+#section-first > h1 {
+  font-size: 44px;
+  font-weight: 900;
+  margin-top: 80px;
+  text-align: center;
+}
+#section-first > p {
+  text-align: center;
+  margin-top: 24px;
+}
+#section-first > button {
+  margin: 40px auto 0 auto;
+  transition: .3s background-color ease-in-out;
+}
+#section-first > button:hover {
+  background: rgba(255,184,66, 1);
+}
+#section-first > img {
+  margin-top: 64px;
+  margin-bottom: 0;
+}
+#section-second {
+  margin-top: 76px;
+}
+#section-fifth, #section-sixth {
+  margin-top: 48px;
+}
+#s2_about_img {
+  background: white;
+  border-radius: 28px;
+  height: auto;
+  display: block;
+}
+#s2_textblock {
+  overflow: hidden;
+  margin-top: 36px;
+}
+.markered_list > li {
+  margin-bottom: 12px;
+  margin-top: 0;
+  font-size: 15px;
+}
+.markered_list {
+  margin-top: 0;
+  list-style-position: outside;
+}
+
+.markered_list > li::before {
+  content: "";
+  width: 12px;
+  height: 2px;
+  display: inline-block;
+  background: var(--text-01);
+  border-radius: 3px;
+  margin: 0 12px 3px 0;
+}
+
+#section-third, #section-fourth {
+  margin-top: 46px;
+}
+#section-sixth {
+  margin-bottom: 128px;
+}
+
+.block_num {
+   background: #333333;
+   border-radius: 16px;
+   width: 56px;
+   height: 56px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   font-weight: 900;
+   font-size: 24px;
+   margin: -60px auto 0 auto;
+}
+
+.block {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  padding: 32px;
+  border-radius: var(--radius-s);
+  background-color: var(--base-01);
+}
+
+.block__title {
+  font: var(--font-h4);
+  color: var(--text-01);
+  margin-bottom: 0px;
+  margin-top: 0;
+  align-self: flex-start;
+}
+
+.block_info {
+  font: var(--font-text-s);
+  color: var(--text-01);
+  margin: 0;
+}
+
+.block_icon {
+  margin: 0 0 32px 0;
+  width: 36px;
+  height: 36px;
+}
+
+@media screen and (max-width: 599px) {
+  *:has(.block) {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  *:has(.block) {
+    margin-bottom: 24px;
+  }
+}
