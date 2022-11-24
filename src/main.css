@@ -51,9 +51,20 @@
   margin-top: 0;
   font-size: 15px;
 }
+section.center_text {
+  text-align: center;
+  height: 160px;
+}
+section.center_text p {
+  margin-bottom: 0;
+  margin-left: -2px;
+  margin-right: 0;
+  font-size: 14px;
+}
 .markered_list {
   margin-top: 0;
   list-style-position: outside;
+  padding: 0;
 }
 
 .markered_list > li::before {
